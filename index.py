@@ -24,4 +24,4 @@ def render_response():
     return render_template('response.html', response = reply)
     
 if __name__=="__main__":
-    app.run(debug=True, port=54321)
+    app.run(debug=False, port=54321)
