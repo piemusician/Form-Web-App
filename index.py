@@ -23,5 +23,15 @@ def render_response():
         	
     return render_template('response.html', response = reply)
     
+@app.route("/responsetwo")
+def render_responsetwo():
+    yes = request.args['yes'] 
+    
+    if yes == 'yes':
+    	reply = "Okay! here's a link to her Spotify profile https://open.spotify.com/artist/66CXWjxzNUsdJxJ2JdwvnR?si=j9UrN3yoTkmXHzWRV_sDDw"
+    else:
+    	reply = "That's okay! You can listen to her on your own time!"
+    
+    return render_template('responsetwo.html', response = reply)
 if __name__=="__main__":
     app.run(debug=True, port=54321)
