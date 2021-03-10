@@ -14,7 +14,7 @@ def render_response():
     #args is an ImmutableMultiDict (like a dictionary but can have mutliple values for the same key and can't be changed)
     #The information in args is visible in the url for the page being requested. ex. .../response?color=blue
     if era == '2010':
-        reply = "That era brings me good memories! I listened to pop."
+        reply = "That era brings me good memories! I listened to pop, specifically Ariana Grande."
         if genre == 'pop':
         		reply = "I appreciate Ariana Grande's Yours Truly Album"
     else:
